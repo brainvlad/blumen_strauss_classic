@@ -16,6 +16,10 @@ body {
     min-height: 100vh;
 }
 
+.wrap-content {
+    min-height: 70vh;
+}
+
 .button {
     padding: 18px 75px;
     text-decoration: none;
@@ -116,4 +120,71 @@ body {
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
+}
+
+/*section-title*/
+
+.section-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+}
+
+/*advantage-section*/
+
+.advantage-section__item {
+    box-sizing: border-box;
+    width: 330px;
+    height: 200px;
+    padding: 0 18px;
+    background: #FCEBED;
+    border: 1px solid #811132;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transition: all 0.3s;
+}
+
+.advantage-section__item:hover {
+    filter: drop-shadow(4px 4px 6px rgba(176, 61, 61, 0.25));
+}
+
+.advantage-section__number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    font-size: 36px;
+    line-height: 44px;
+    color: #811132;
+}
+
+.advantage-section__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 15px;
+}
+
+.advantage-section__description {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.advantage-section__content_row {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
 }
