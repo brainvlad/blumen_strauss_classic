@@ -21,14 +21,25 @@ body {
 }
 
 .button {
-    padding: 18px 75px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .btn-heavy {
     background-color: #811132;
     border: 1px solid #811132;
     color: #ffffff;
+}
+
+.btn-lite {
+    background-color: #FCEBED;
+    border: 1px solid #811132;
+    color: #333333;
+    transition: background-color 0.15s;
+}
+
+.btn-lite:hover {
+    background-color: #F2CFD3;
 }
 
 /*header*/
@@ -122,6 +133,10 @@ body {
     line-height: 28px;
 }
 
+.welcome-section__btn {
+    padding: 18px 75px;
+}
+
 /*section-title*/
 
 .section-title {
@@ -187,4 +202,170 @@ body {
     align-items: center;
     justify-content: center;
     gap: 80px;
+}
+
+/*advert-section*/
+
+.advert-section__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.advert-section__col {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.advert-section__item {
+    height: 480px;
+    color: #FFF6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.advert-section__item:hover {
+    transform: scale(1.03);
+}
+
+.advert-section__item_min {
+    height: 220px;
+}
+
+.advert-section__text-content {
+    padding: 40px 10px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.34);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.advert-section__title {
+    font-weight: bold;
+    line-height: 40px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.advert-section__subtitle {
+
+}
+
+.advert-section__item_bg-1 {
+    background-image: url(../img/advent-bg-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #811132;
+}
+
+.advert-section__item_bg-2 {
+    background-image: url(../img/advent-bg-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #811132;
+}
+
+.advert-section__item_bg-3 {
+    background-image: url(../img/advent-bg-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #811132;
+}
+
+/*popular-goods-section*/
+
+.popular-goods-section {
+
+}
+
+.popular-goods-section__goods {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-goods-section__item {
+    width: 280px;
+}
+
+.popular-goods-section__img {
+    width: 280px;
+    height: 280px;
+    cursor: pointer;
+}
+
+.popular-goods-section__img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popular-goods-section__price {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.popular-goods-section__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-goods-section__name-good {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.popular-goods-section__button {
+    padding: 8px 28px;
+}
+
+/*bottom-scroll*/
+
+.bottom-scroll {
+    max-width: 560px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bottom-scroll__line {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: #811132;
+}
+
+.bottom-scroll__slider {
+    position: absolute;
+    bottom: 6px;
+    margin: 0 10px;
+    width: 80px;
+    height: 9px;
+    background-color: #811132;
+    cursor: pointer;
 }
