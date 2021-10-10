@@ -125,12 +125,34 @@ body {
     background-color: #FCEBED;
 }
 
+
+.services-welcome-section_bg {
+    background-image: url(../img/services/bg-gradient.png), url(../img/services/services-welcome-bg.png);
+    background-position:  center bottom, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
+    background-color: #FCEBED;
+}
+
+.cart-welcome-section_bg {
+    background-image: url(../img/cart/cart-welcome-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FCEBED;
+}
+
 .welcome-section__content {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: end;
     text-align: right;
+}
+
+.welcome-section__content_services {
+    align-items: start;
+    margin-top: 300px;
 }
 
 .welcome-section__text-content {
@@ -165,6 +187,10 @@ body {
     justify-content: flex-end;
 }
 
+.welcome-section__subtitle_from-line_services {
+    flex-direction: row-reverse;
+}
+
 .welcome-section__btn {
     padding: 18px 75px;
 }
@@ -174,6 +200,11 @@ body {
     height: 1px;
     background-color: #333333;
     margin: 15px 20px;
+}
+
+.welcome-section__text-content_services {
+    align-items: start;
+    text-align: left;
 }
 
 /*section-title*/
@@ -1017,4 +1048,183 @@ body {
 
 .goods__arrows_right {
     right: -100px;
+}
+
+/*payment*/
+
+.payment {
+
+}
+
+.payment__list {
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.payment__list:nth-child(odd) {
+    align-items: flex-end;
+    text-align: right;
+}
+
+
+.payment__item {
+    min-height: 100px;
+    width: fit-content;
+    /*min-width: 800px;*/
+    max-width: 850px;
+    border: 1px solid #811132;
+    padding: 50px 30px;
+    margin: 50px 0;
+
+}
+
+
+.payment__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.payment__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/*cart*/
+
+.cart-section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.cart__content {
+    max-width: 970px;
+    margin: auto;
+}
+
+.cart__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.cart {
+    background-color: rgba(0, 0, 0, 0.61);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.cart__table {
+    margin: 20px auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.cart__pict {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+}
+
+
+.cart__table td {
+    text-align: center;
+}
+
+.cart__thead,
+.cart__tfoot {
+    height: 60px;
+}
+
+.cart__thead th {
+    border-bottom: 1px solid #ffffff;
+}
+
+.cart__tfoot td {
+    border-top: 1px solid #ffffff;
+}
+.cart__tbody tr{
+    height: 150px;
+}
+
+.cart__remove {
+    cursor: pointer;
+}
+
+.cart__button {
+    padding: 15px 200px 15px 0;
+    display: flex;
+    justify-content: right;
+}
+
+.cart-discount {
+
+}
+
+.cart-discount__item {
+    margin-top: 150px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(252, 235, 237, 0.77);
+    padding: 100px 170px;
+
+}
+
+.cart-discount__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 50px;
+}
+
+.cart-discount__content {
+    display: flex;
+}
+
+.cart-discount__form-block {
+    width: 50%;
+}
+
+.cart-discount__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.cart-discount__form input {
+    width: 100%;
+    color: #333333;
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 10px 0;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.cart-discount__desc {
+    width: 50%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 50px;
 }
